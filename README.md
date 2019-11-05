@@ -8,7 +8,8 @@ The plugin will currently support the following networks, links can be added via
 3) Linkedin
 4) Instagram
 5) Youtube
-6) Ebay
+6) Pinterest
+7) Ebay
 
 The plugin provides a function that can be used in your plugin or theme:
 
