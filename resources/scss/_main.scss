@@ -4,6 +4,7 @@ $linkedin: #007bb5;
 $youtube: #ff0000;
 $twitter: #1da1f2;
 $instagram: #833ab4;
+$pinterest: #e60023;
 $white: #fff;
 
 .social-icons {
@@ -166,5 +167,24 @@ $white: #fff;
 
     &:hover {
         background-color: lighten($instagram, 10%);
+    }
+}
+.social-icons .pinterest {
+    background-color: $pinterest;
+
+    path{
+        fill:  $white;
+    }
+
+    svg {
+        width: 35px;
+
+        @include media-query(micro) {
+            width: 30px;
+        }
+    }
+
+    &:hover {
+        background-color: lighten($pinterest, 10%);
     }
 }

@@ -13,6 +13,7 @@ class Plugin
         'instagram',
         'youtube',
         'ebay',
+        'pinterest',
     ];
 
 
@@ -110,6 +111,7 @@ class Plugin
                                 'instagram' => 'Instagram',
                                 'youtube' => 'Youtube',
                                 'ebay' => 'Ebay',
+                                'pinterest' => 'Pinterest',
                             ],
                         ],
                         [
