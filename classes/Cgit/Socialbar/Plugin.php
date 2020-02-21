@@ -119,7 +119,7 @@ class Plugin
                             'label' => 'Social Link',
                             'name' => 'social_link',
                             'type' => 'link',
-                            'return_format' => 'url',
+                            'return_format' => 'array',
                             'wrapper' => [
                                 'width' => '50',
                             ],
@@ -147,8 +147,10 @@ class Plugin
             while (have_rows('options__social_repeater', 'options')) : the_row();
                 if (get_sub_field('social__link')) {
                     $social = get_sub_field('social__choices');
+                    $link = get_sub_field('social__link', 'options');
+
                     ?>
-                    <a href="<?= get_sub_field('social__link', 'options') ?>" class="single <?= $social ?>">
+                    <a href="<?= $link['url'] ?>" class="single <?= $social ?>" target="<?= $link['target'] ?>">
                         <?= file_get_contents(dirname(CGIT_WP_SOCIAL_BAR) . '/resources/icons/' . $social . '.svg'); ?>
                     </a>
                     <?php
