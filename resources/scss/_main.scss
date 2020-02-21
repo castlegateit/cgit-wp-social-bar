@@ -26,12 +26,80 @@ $white: #fff;
 
     .single {
         height: 65px;
-        width: 20%;
         display: block;
         font-size: 0;
         position: relative;
 
+        &:first-child:nth-last-child(1) {
+            width: 100%;
+
+            @include media-query(micro) {
+                width: 43px;
+            }
+
+            @include media-query(tera) {
+                width: 55px;
+            }
+        }
+
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ .single {
+            width: 50%;
+
+            @include media-query(micro) {
+                width: 43px;
+            }
+
+            @include media-query(tera) {
+                width: 55px;
+            }
+        }
+
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ .single {
+            width: 33.3333%;
+
+            @include media-query(micro) {
+                width: 43px;
+            }
+
+            @include media-query(tera) {
+                width: 55px;
+            }
+        }
+
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ .single {
+            width: 25%;
+
+            @include media-query(micro) {
+                width: 43px;
+            }
+
+            @include media-query(tera) {
+                width: 55px;
+            }
+        }
+
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ .single {
+            width: 20%;
+
+            @include media-query(micro) {
+                width: 43px;
+            }
+
+            @include media-query(tera) {
+                width: 55px;
+            }
+        }
+
         @include media-query(micro) {
+            height: 43px;
+            width: 43px;
+        }
+
+        @include media-query(tera) {
             height: 55px;
             width: 55px;
         }
@@ -66,6 +134,10 @@ $white: #fff;
         width: 35px;
 
         @include media-query(micro) {
+            width: 20px;
+        }
+
+        @include media-query(tera) {
             width: 24px;
         }
     }
@@ -85,6 +157,10 @@ $white: #fff;
         width: 55px;
 
         @include media-query(micro) {
+            width: 40px;
+        }
+
+        @include media-query(tera) {
             width: 45px;
         }
     }
@@ -104,6 +180,10 @@ $white: #fff;
         width: 30px;
 
         @include media-query(micro) {
+            width: 18px;
+        }
+
+        @include media-query(tera) {
             width: 20px;
         }
     }
@@ -123,6 +203,10 @@ $white: #fff;
         width: 38px;
 
         @include media-query(micro) {
+            width: 23px;
+        }
+
+        @include media-query(tera) {
             width: 28px;
         }
     }
@@ -142,6 +226,10 @@ $white: #fff;
         width: 34px;
 
         @include media-query(micro) {
+            width: 19px;
+        }
+
+        @include media-query(tera) {
             width: 24px;
         }
     }
@@ -161,6 +249,10 @@ $white: #fff;
         width: 34px;
 
         @include media-query(micro) {
+            width: 19px;
+        }
+
+        @include media-query(tera) {
             width: 24px;
         }
     }
@@ -180,6 +272,10 @@ $white: #fff;
         width: 35px;
 
         @include media-query(micro) {
+            width: 25px;
+        }
+
+        @include media-query(tera) {
             width: 30px;
         }
     }
