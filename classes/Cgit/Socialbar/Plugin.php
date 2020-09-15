@@ -142,18 +142,18 @@ class Plugin
     {
         $args = implode(' -', $args);
 
-        echo '<div class="social-icons ' . $args .'">';
+        echo '<div class="social-icons ' . $args . '">';
         if (have_rows('options__social_repeater', 'options')) :
             while (have_rows('options__social_repeater', 'options')) : the_row();
                 if (get_sub_field('social__link')) {
                     $social = get_sub_field('social__choices');
                     $link = get_sub_field('social__link', 'options');
 
-                    ?>
-                    <a href="<?= $link['url'] ?>" class="single <?= $social ?>" target="<?= $link['target'] ?>">
+?>
+                    <a href="<?= $link['url'] ?>" class="single <?= $social ?>" target="<?= $link['target'] ?: '_self' ?>">
                         <?= file_get_contents(dirname(CGIT_WP_SOCIAL_BAR) . '/resources/icons/' . $social . '.svg'); ?>
                     </a>
-                    <?php
+<?php
                 }
             endwhile;
         endif;
