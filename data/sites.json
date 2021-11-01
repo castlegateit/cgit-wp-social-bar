@@ -1,0 +1,121 @@
+{
+    "amazon": {
+        "name": "Amazon",
+        "color": "#ff9900"
+    },
+
+    "discord": {
+        "name": "Discord",
+        "color": "#5865f2"
+    },
+
+    "facebook": {
+        "name": "Facebook",
+        "color": "#1877f2"
+    },
+
+    "flickr": {
+        "name": "Flickr",
+        "color": "#f40083"
+    },
+
+    "google": {
+        "name": "Google",
+        "color": "#4285f4"
+    },
+
+    "instagram": {
+        "name": "Instagram",
+        "color": "#c32aa3"
+    },
+
+    "linkedin": {
+        "name": "LinkedIn",
+        "color": "#0a66c2"
+    },
+
+    "mastodon": {
+        "name": "Mastodon",
+        "color": "#2b90d9"
+    },
+
+    "medium": {
+        "name": "Medium",
+        "color": "#02b875"
+    },
+
+    "pinterest": {
+        "name": "Pinterest",
+        "color": "#bd081c"
+    },
+
+    "reddit": {
+        "name": "Reddit",
+        "color": "#ff5700"
+    },
+
+    "skype": {
+        "name": "Skype",
+        "color": "#00aff0"
+    },
+
+    "slack": {
+        "name": "Slack",
+        "color": "#4a154b"
+    },
+
+    "snapchat": {
+        "name": "Snapchat",
+        "color": "#fffc00"
+    },
+
+    "soundcloud": {
+        "name": "SoundCloud",
+        "color": "#ff5500"
+    },
+
+    "spotify": {
+        "name": "Spotify",
+        "color": "#1ed760"
+    },
+
+    "steam": {
+        "name": "Steam",
+        "color": "#171a21"
+    },
+
+    "telegram": {
+        "name": "Telegram",
+        "color": "#0088cc"
+    },
+
+    "tumblr": {
+        "name": "Tumblr",
+        "color": "#2c4762"
+    },
+
+    "twitch": {
+        "name": "Twitch",
+        "color": "#9146ff"
+    },
+
+    "twitter": {
+        "name": "Twitter",
+        "color": "#1da1f2"
+    },
+
+    "vimeo": {
+        "name": "Vimeo",
+        "color": "#1ab7ea"
+    },
+
+    "whatsapp": {
+        "name": "WhatsApp",
+        "color": "#25d366"
+    },
+
+    "youtube": {
+        "name": "YouTube",
+        "color": "#ff0000"
+    }
+}

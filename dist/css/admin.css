@@ -1,0 +1,93 @@
+.cgit-wp-social-bar-settings__section {
+  margin: 2em 0;
+}
+.cgit-wp-social-bar-settings__heading {
+  margin: 0 0 1em 0;
+}
+.cgit-wp-social-bar-settings__grid {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.cgit-wp-social-bar-settings__column {
+  width: calc(50% - 1em);
+}
+.cgit-wp-social-bar-settings__list {
+  border: 2px dashed #ccc;
+  min-height: 160px;
+}
+.cgit-wp-social-bar-settings__item {
+  background: white;
+  border: 1px solid #ccc;
+  margin: 0.5em;
+  padding: 1em;
+}
+.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__item {
+  cursor: move;
+}
+
+.cgit-wp-social-bar-settings__list--disabled.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__item {
+  opacity: 0.75;
+}
+
+@media screen and (min-width: 783px) {
+  .cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__item-grid {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cgit-wp-social-bar-settings__site-name {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 783px) {
+  .cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__site-name {
+    margin: 0;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__site-name {
+    margin: 0;
+    width: 120px;
+  }
+}
+
+.cgit-wp-social-bar-settings__enabled-field {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__enabled-field {
+  display: none;
+}
+
+.cgit-wp-social-bar-settings__sort-field {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__sort-field {
+  display: none;
+}
+
+.cgit-wp-social-bar-settings__sort-input {
+  max-width: 100%;
+}
+@media screen and (min-width: 783px) {
+  .cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__url-field {
+    flex-grow: 1;
+  }
+}
+
+.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__url-label {
+  display: none;
+}
+
+.cgit-wp-social-bar-settings__url-input {
+  max-width: 100%;
+}
+.cgit-wp-social-bar-settings__list--sortable .cgit-wp-social-bar-settings__url-input {
+  width: 100%;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,145 @@
+.cgit-wp-social-bar {
+    box-shadow: 0 0 30px rgba(black, 0.25);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 900;
+
+    @media screen and (min-width: 640px) {
+        box-shadow: 0 0 36px rgba(black, 0.25);
+    }
+
+    &--left {
+        flex-direction: column;
+        left: 0;
+        right: auto;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+
+    &--right {
+        flex-direction: column;
+        left: auto;
+        right: 0;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+
+    &--top {
+        flex-direction: row;
+        left: 50%;
+        right: auto;
+        top: 0;
+        bottom: auto;
+        transform: translateX(-50%);
+
+        // Make space for WordPress admin bar at top of page.
+        @at-root .admin-bar & {
+            top: 32px;
+
+            @media screen and (max-width: 782px) {
+                top: 46px;
+            }
+        }
+    }
+
+    &--bottom {
+        flex-direction: row;
+        left: 50%;
+        right: auto;
+        top: auto;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    &__item {
+        height: 40px;
+        width: 40px;
+
+        @media screen and (min-width: 640px) {
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    &__link {
+        align-items: center;
+        background: black;
+        color: white;
+        display: flex;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+
+        @media screen and (min-width: 640px) {
+            font-size: 20px;
+        }
+
+        transition: {
+            duration: 200ms;
+            property: background-color, color, fill;
+        }
+
+        &:hover {
+            color: white;
+            background-color: lighten(black, 15%);
+            text-decoration: none;
+        }
+
+        @each $site, $color in $site-colors {
+            &--#{$site} {
+                background-color: $color;
+                color: map-get($site-contrast-colors, $site);
+
+                &:hover {
+                    background-color: lighten($color, 15%);
+                    color: map-get($site-contrast-colors, $site);
+                }
+            }
+        }
+    }
+
+    &__link-icon {
+        display: block;
+        height: 67%;
+        width: 67%;
+
+        svg {
+            display: block;
+            fill: currentColor;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    // Fallback content when icon not available.
+    &__link-icon-initial {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__link-text {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "castlegate/cgit-wp-social-bar",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Castlegate\\SocialBar\\": "classes"
+        }
+    },
+    "require": {}
+}

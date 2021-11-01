@@ -1,0 +1,112 @@
+.cgit-wp-social-bar-settings {
+    $block: &;
+
+    &__section {
+        margin: 2em 0;
+    }
+
+    &__heading {
+        margin: 0 0 1em 0;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1280px;
+    }
+
+    &__column {
+        width: calc(50% - 1em);
+    }
+
+    &__list {
+        border: 2px dashed #ccc;
+        min-height: 160px;
+    }
+
+    &__item {
+        background: white;
+        border: 1px solid #ccc;
+        margin: 0.5em;
+        padding: 1em;
+
+        @at-root #{$block}__list--sortable & {
+            cursor: move;
+        }
+
+        @at-root #{$block}__list--disabled#{$block}__list--sortable & {
+            opacity: 0.75;
+        }
+    }
+
+    &__item-grid {
+        @at-root #{$block}__list--sortable & {
+            @media screen and (min-width: 783px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    &__site-name {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+
+        @at-root #{$block}__list--sortable & {
+            @media screen and (min-width: 783px) {
+                margin: 0;
+                width: 100px;
+            }
+
+            @media screen and (min-width: 960px) {
+                margin: 0;
+                width: 120px;
+            }
+        }
+    }
+
+    &__enabled-field {
+        display: block;
+        margin-bottom: 0.5em;
+
+        @at-root #{$block}__list--sortable & {
+            display: none;
+        }
+    }
+
+    &__sort-field {
+        display: block;
+        margin-bottom: 0.5em;
+
+        @at-root #{$block}__list--sortable & {
+            display: none;
+        }
+    }
+
+    &__sort-input {
+        max-width: 100%;
+    }
+
+    &__url-field {
+        @at-root #{$block}__list--sortable & {
+            @media screen and (min-width: 783px) {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    &__url-label {
+        @at-root #{$block}__list--sortable & {
+            display: none;
+        }
+    }
+
+    &__url-input {
+        max-width: 100%;
+
+        @at-root #{$block}__list--sortable & {
+            width: 100%;
+        }
+    }
+}
