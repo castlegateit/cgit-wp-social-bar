@@ -174,22 +174,20 @@ class Settings
     public static function sanitizeSites(array $settings): array
     {
         $sites = Sites::sites();
+        $items = [];
 
-        $settings = array_filter($settings);
-        $settings = array_intersect_key($settings, $sites);
-
-        foreach ($settings as $key => $data) {
-            $settings[$key] = [
-                'enabled' => (bool) ($data['enabled'] ?? false),
-                'sort' => (int) ($data['sort'] ?? 0),
-                'url' => (string) ($data['url'] ?? ''),
-                'name' => $sites[$key]['name'] ?? '',
+        foreach ($sites as $key => $site) {
+            $items[$key] = [
+                'enabled' => (bool) ($settings[$key]['enabled'] ?? false),
+                'sort' => (int) ($settings[$key]['sort'] ?? 0),
+                'url' => (string) ($settings[$key]['url'] ?? ''),
+                'name' => $site['name'],
             ];
         }
 
-        uasort($settings, static::class . '::sort');
+        uasort($items, static::class . '::sort');
 
-        return $settings;
+        return $items;
     }
 
     /**
