@@ -1,26 +1,32 @@
 {
-    "name": "cabin-locator",
-    "version": "1.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "beanstalk:castlegateit/cabin-locator.git"
-    },
-    "author": "",
-    "license": "UNLICENSED",
-    "devDependencies": {
-        "del": "*",
-        "gulp": "*",
-        "gulp-autoprefixer": "*",
-        "gulp-concat": "*",
-        "gulp-plumber": "*",
-        "gulp-rename": "*",
-        "gulp-sass": "*",
-        "gulp-sourcemaps": "*",
-        "gulp-uglify": "*"
-    }
+  "name": "@castlegate/cgit-wp-social-bar",
+  "version": "2.0.0",
+  "description": "Castlegate IT WP Social Bar",
+  "main": "",
+  "scripts": {
+    "build": "npx gulp",
+    "watch": "npx gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castlegateit/cgit-wp-social-bar.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "contrast-color": "^1.0.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-filter": "^7.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-touch-fd": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.42.1"
+  }
 }
