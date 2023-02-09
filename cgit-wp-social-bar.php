@@ -4,7 +4,7 @@
  * Plugin Name: Castlegate IT WP Social Bar
  * Plugin URI: https://github.com/castlegateit/cgit-wp-social-bar
  * Description: Sticky social bar for WordPress.
- * Version: 2.0.1
+ * Version: 2.0.3
  * Author: Castlegate IT
  * Author URI: https://www.castlegateit.co.uk/
  * License: MIT
