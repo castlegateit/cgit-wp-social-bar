@@ -26,6 +26,8 @@ if (!$sites) {
             $icon = file_get_contents($file);
         }
 
+        $icon = apply_filters('cgit_wp_social_bar_icon', $icon, $key);
+
         ?>
         <span class="cgit-wp-social-bar__item">
             <a href="<?= $site['url'] ?>" class="cgit-wp-social-bar__link cgit-wp-social-bar__link--<?= $key ?>">
