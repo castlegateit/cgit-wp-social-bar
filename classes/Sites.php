@@ -23,7 +23,7 @@ class Sites
      */
     public static function data(): array
     {
-        $file = dirname(CGIT_SOCIAL_BAR_PLUGIN) . '/data/sites.json';
+        $file = CGIT_WP_SOCIAL_BAR_PLUGIN_DIR . '/data/sites.json';
 
         if (!is_file($file)) {
             return [];

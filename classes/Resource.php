@@ -23,8 +23,8 @@ abstract class Resource
      */
     final public static function enqueue(string $name, string $path, array $deps = []): void
     {
-        $url = path_join(plugin_dir_url(CGIT_SOCIAL_BAR_PLUGIN), $path);
-        $file = path_join(dirname(CGIT_SOCIAL_BAR_PLUGIN), $path);
+        $url = path_join(plugin_dir_url(CGIT_WP_SOCIAL_BAR_PLUGIN_FILE), $path);
+        $file = path_join(CGIT_WP_SOCIAL_BAR_PLUGIN_DIR, $path);
 
         if (!is_file($file)) {
             return;

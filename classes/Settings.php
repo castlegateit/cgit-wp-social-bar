@@ -256,7 +256,7 @@ class Settings
         $available_positions = static::$positions;
         $form_id = static::$formId;
 
-        include dirname(CGIT_SOCIAL_BAR_PLUGIN) . '/parts/settings.php';
+        include CGIT_WP_SOCIAL_BAR_PLUGIN_DIR . '/parts/settings.php';
     }
 
     /**
@@ -266,6 +266,6 @@ class Settings
      */
     public function renderSaveMessage(): void
     {
-        include dirname(CGIT_SOCIAL_BAR_PLUGIN) . '/parts/settings-save-message.php';
+        include CGIT_WP_SOCIAL_BAR_PLUGIN_DIR . '/parts/settings-save-message.php';
     }
 }

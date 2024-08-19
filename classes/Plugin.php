@@ -45,6 +45,6 @@ class Plugin
             return;
         }
 
-        include dirname(CGIT_SOCIAL_BAR_PLUGIN) . '/parts/social-bar.php';
+        include CGIT_WP_SOCIAL_BAR_PLUGIN_DIR . '/parts/social-bar.php';
     }
 }

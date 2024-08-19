@@ -19,7 +19,7 @@ if (!$sites) {
     <?php
 
     foreach ($sites as $key => $site) {
-        $file = dirname(CGIT_SOCIAL_BAR_PLUGIN) . "/images/$key.svg";
+        $file = CGIT_WP_SOCIAL_BAR_PLUGIN_DIR . "/images/$key.svg";
         $icon = '<span class="cgit-wp-social-bar__link-icon-initial">' . strtoupper(substr($site['name'], 0, 1)) . '</span>';
 
         if (is_file($file)) {
