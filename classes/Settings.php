@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Castlegate\SocialBar;
 
-class Settings
+final class Settings
 {
     /**
      * Settings page title

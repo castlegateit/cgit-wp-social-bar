@@ -1,3 +1,11 @@
+<?php
+
+if (!(isset($form_id) && isset($sites) && isset($available_positions) && isset($position))) {
+    return;
+}
+
+?>
+
 <div class="wrap">
     <h1>Social Bar</h1>
 

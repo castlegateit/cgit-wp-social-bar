@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Castlegate\SocialBar;
 
-class Plugin
+final class Plugin
 {
     /**
      * Initialization

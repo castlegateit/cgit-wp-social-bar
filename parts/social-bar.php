@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($position)) {
+    return;
+}
+
 $sites = $sites ?? [];
 
 // Restrict output to items with a URL.

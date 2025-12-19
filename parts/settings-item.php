@@ -1,5 +1,9 @@
 <?php
 
+if (!(isset($site) && isset($key))) {
+    return;
+}
+
 $enabled = $site['enabled'];
 $sort = $site['sort'];
 $url = $site['url'];
